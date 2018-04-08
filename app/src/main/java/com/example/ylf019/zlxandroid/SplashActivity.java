@@ -29,6 +29,9 @@ public class SplashActivity extends AppCompatActivity {
 
 //    private LatLng startPt,endPt;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
