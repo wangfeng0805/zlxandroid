@@ -238,7 +238,7 @@ public class ZlxLoveRequirementActivity extends BaseActivity {
         pvOptions.show();
     }
 
-    private void showPickerView3() {// 弹出选择器
+    private void showPickerView3() {
         OptionsPickerView pvOptions = new OptionsPickerBuilder(this, new OnOptionsSelectListener() {
             @Override
             public void onOptionsSelect(int options1, int options2, int options3, View v) {
