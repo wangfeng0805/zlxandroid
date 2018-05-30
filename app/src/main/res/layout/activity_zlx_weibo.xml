@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_panel_view"
+        layout="@layout/include_titlebar_normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.ajguan.library.EasyRefreshLayout
+            android:id="@+id/easylayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </com.ajguan.library.EasyRefreshLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/tab_main_bg_bottom" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y28"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_more"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:drawableLeft="@drawable/details_tab_more"-->
+                    <!--android:drawablePadding="@dimen/x8"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="关注"-->
+                    <!--android:textColor="@color/secondary_text"-->
+                    <!--android:textSize="@dimen/x12" />-->
+            <!--</LinearLayout>-->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/y20"
+                android:layout_gravity="center_vertical"
+                android:background="@color/live_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_comment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/details_comment"
+                    android:drawablePadding="@dimen/x8"
+                    android:gravity="center"
+                    android:text="评论"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/x12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/y20"
+                android:layout_gravity="center_vertical"
+                android:background="@color/live_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_like"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_like_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/details_zan" />
+
+                <TextView
+                    android:id="@+id/tv_like_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x8"
+                    android:gravity="center"
+                    android:text="赞"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/x12" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

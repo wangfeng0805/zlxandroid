@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y44"
+        android:background="@color/rng_black">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x14" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="写留言"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x14" />
+
+        <TextView
+            android:id="@+id/tv_push"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x20"
+            android:gravity="center"
+            android:text="发表"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x14" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/x8"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_marginRight="@dimen/x12"
+        android:layout_marginTop="@dimen/x12"
+        android:layout_weight="1"
+        android:background="@color/color_transparent"
+        android:gravity="top"
+        android:hint="@string/hint_say_something"
+        android:inputType="textMultiLine"
+        android:textColor="@color/primary_text"
+        android:textColorHint="#cccccc"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_content_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="@dimen/normal_space_margin"
+        android:textColor="#ff0000"
+        android:visibility="gone"
+        tools:text="-1"
+        tools:visibility="visible"
+        />
+
+</LinearLayout>

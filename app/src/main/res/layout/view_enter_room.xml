@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="@dimen/x230"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/x8"
+        android:id="@+id/text_dialog"
+        android:text="去他的空间"
+        android:textSize="@dimen/x14"
+        android:textColor="@color/primary_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/x2"
+            android:paddingBottom="@dimen/x2"
+            android:paddingLeft="@dimen/x8"
+            android:paddingRight="@dimen/x8"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:drawableLeft="@drawable/suo"
+                    android:drawablePadding="@dimen/x6"
+                    android:id="@+id/text1"
+                    android:text="进入我的空间"
+                    android:textSize="@dimen/x12"
+                    android:textColor="@color/primary_text"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/x6"
+                    android:paddingTop="@dimen/x6"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <com.example.ylf019.zlxandroid.view.RoyalSwitch
+                    android:id="@+id/switch_botton"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

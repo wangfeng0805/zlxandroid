@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="person_center_titles">
+        <item>留言板</item>
+        <item>说说</item>
+    </string-array>
+
+    <string-array name="person_center_titles2">
+        <item>说说</item>
+        <item>留言板</item>
+    </string-array>
+
+    <string-array name="ZLX_bb_titles">
+        <item>老乡动态</item>
+        <item>家乡美景</item>
+        <item>民风民俗</item>
+    </string-array>
+
+    <string-array name="ZLX_advert_titles">
+        <item>广告</item>
+        <item>求助</item>
+    </string-array>
+
+
+</resources>

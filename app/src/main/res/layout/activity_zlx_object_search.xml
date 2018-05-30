@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_titlebar_normal"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/color_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y36">
+
+        <EditText
+            android:textColor="#1d1d1d"
+            android:background="@drawable/et_msg_shape"
+            android:layout_margin="@dimen/x6"
+            android:hint="请输入昵称或者个性标签"
+            android:drawableLeft="@drawable/edit_recommend_find"
+            android:drawablePadding="@dimen/x6"
+            android:paddingLeft="@dimen/x6"
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:textSize="@dimen/x12"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/x6"
+            android:paddingBottom="@dimen/x6"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ajguan.library.EasyRefreshLayout
+            android:id="@+id/easylayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_bg">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.ajguan.library.EasyRefreshLayout>
+
+        <include
+            layout="@layout/base_recycle_empty"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/x3"
+        android:layout_marginBottom="@dimen/x3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y36">
+
+        <TextView
+            android:textColor="#1d1d1d"
+            android:background="@drawable/et_msg_shape"
+            android:layout_margin="@dimen/x6"
+            android:hint="搜索"
+            android:drawableLeft="@drawable/edit_recommend_find"
+            android:drawablePadding="@dimen/x6"
+            android:paddingLeft="@dimen/x6"
+            android:id="@+id/tv_search"
+            android:layout_width="0dp"
+            android:textSize="@dimen/x12"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/x6"
+            android:paddingBottom="@dimen/x6"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_choose_selector"
+            android:layout_marginTop="@dimen/x6"
+            android:layout_marginBottom="@dimen/x6"
+            android:layout_marginRight="@dimen/x6"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/btn_send"
+            android:text="筛选"
+            android:textSize="@dimen/x12"
+            android:layout_width="@dimen/x52"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <com.ajguan.library.EasyRefreshLayout
+            android:id="@+id/easylayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:paddingTop="@dimen/x3"
+                android:paddingLeft="@dimen/x12"
+                android:paddingRight="@dimen/x12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.ajguan.library.EasyRefreshLayout>
+
+        <!--<include-->
+            <!--layout="@layout/base_recycle_empty"-->
+            <!--android:visibility="gone"/>-->
+
+    <!--</FrameLayout>-->
+
+
+
+</LinearLayout>

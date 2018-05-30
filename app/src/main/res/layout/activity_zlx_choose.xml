@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/color_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_titlebar_normal"/>
+
+    <LinearLayout
+        android:id="@+id/ll_item1"
+        android:layout_marginTop="@dimen/y6"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y36">
+
+        <TextView
+            android:text="籍贯"
+            android:textSize="@dimen/x12"
+            android:textColor="@color/secondary_text"
+            android:gravity="center"
+            android:layout_width="@dimen/x92"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_province"
+            android:text=""
+            android:hint="请选择对象的籍贯"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x12"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item2"
+        android:layout_marginTop="@dimen/x1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y36">
+
+        <TextView
+            android:text="年龄范围"
+            android:textSize="@dimen/x12"
+            android:textColor="@color/secondary_text"
+            android:gravity="center"
+            android:layout_width="@dimen/x92"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:text=""
+            android:hint="请选择对象的年龄范围"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x12"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item3"
+        android:layout_marginTop="@dimen/x1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y36">
+
+        <TextView
+            android:text="身高范围"
+            android:textSize="@dimen/x12"
+            android:textColor="@color/secondary_text"
+            android:gravity="center"
+            android:layout_width="@dimen/x92"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_height"
+            android:text=""
+            android:hint="请输入对象的身高范围"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x12"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_save_search_term"
+        android:layout_marginTop="@dimen/y16"
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginRight="@dimen/x26"
+        android:background="@drawable/btn_send_selector"
+        android:text="保存"
+        android:textSize="@dimen/x12"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/x9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_object"
+    android:paddingTop="@dimen/y6"
+    android:paddingBottom="@dimen/y6"
+    android:paddingLeft="@dimen/x12"
+    android:layout_marginTop="@dimen/x1"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y126">
+
+   <FrameLayout
+       android:layout_width="@dimen/x106"
+       android:layout_height="match_parent">
+
+       <com.makeramen.roundedimageview.RoundedImageView
+           android:id="@+id/ri_round_bg"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="#a73bff"
+           app:riv_corner_radius="@dimen/x8"
+           app:riv_mutate_background="true" />
+
+       <com.makeramen.roundedimageview.RoundedImageView
+           android:id="@+id/iv_picture"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_margin="@dimen/x3"
+           android:scaleType="centerCrop"
+           android:src="@drawable/ic_default_picture"
+           app:riv_corner_radius="@dimen/x6"
+           app:riv_mutate_background="true" />
+
+   </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:text="戏子无情"
+            android:drawablePadding="@dimen/x6"
+            android:drawableRight="@drawable/icon_register_boy_selected"
+            android:layout_marginTop="@dimen/x12"
+            android:layout_marginBottom="@dimen/x12"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:text="上海 浦东新区"
+            android:layout_marginBottom="@dimen/x6"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/x12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_personal_tag"
+            android:text="个性标签:  敢爱敢恨 健谈"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/x12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_user_info"
+            android:text="30岁 160-165厘米 其他"
+            android:layout_marginTop="@dimen/x3"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/x12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:text="距离 1.3公里"
+            android:layout_marginTop="@dimen/x3"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/x12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

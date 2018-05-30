@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/include_titlebar_normal" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/layout_header_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y116"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_header" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user_avatar"
+                android:layout_width="@dimen/x36"
+                android:layout_height="@dimen/x36"
+                android:layout_centerInParent="true"
+                android:src="@drawable/sidebar_default_head_icon" />
+
+        </RelativeLayout>
+
+        <!--<TextView-->
+            <!--android:text="相册"-->
+            <!--android:textColor="@color/primary_text"-->
+            <!--android:textSize="@dimen/x12"-->
+            <!--android:layout_marginTop="@dimen/y6"-->
+            <!--android:paddingLeft="@dimen/x9"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="@dimen/x6"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/y26">-->
+
+            <!--<ImageView-->
+                <!--android:src="@drawable/ic_default_picture"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<ImageView-->
+                <!--android:src="@drawable/ic_default_picture"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<ImageView-->
+                <!--android:src="@drawable/ic_default_picture"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<ImageView-->
+                <!--android:src="@drawable/ic_default_picture"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<ImageView-->
+                <!--android:src="@drawable/ic_default_picture"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/logo_more1"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/right"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="match_parent"/>-->
+
+        <!--</LinearLayout>-->
+
+
+
+        <LinearLayout
+            android:id="@+id/item_tab1"
+            android:layout_marginTop="@dimen/x6"
+            android:layout_marginBottom="@dimen/x6"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y26">
+
+            <TextView
+                android:text="动态 : "
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/x12"
+                android:layout_marginTop="@dimen/y6"
+                android:paddingLeft="@dimen/x9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!--<ImageView-->
+                <!--android:src="@drawable/ic_default_picture"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <ImageView
+                android:id="@+id/iv_image1"
+                android:src="@drawable/ic_default_picture"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_image2"
+                android:src="@drawable/ic_default_picture"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_image3"
+                android:src="@drawable/ic_default_picture"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_image4"
+                android:src="@drawable/ic_default_picture"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/logo_more2"
+                android:layout_gravity="center"
+                android:src="@drawable/right"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/color_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"/>
+
+        <TextView
+            android:text="账号信息:"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x12"
+            android:layout_marginTop="@dimen/y6"
+            android:paddingLeft="@dimen/x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_lx_num"
+            android:text="老乡号: xxx"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x10"
+            android:layout_marginTop="@dimen/y2"
+            android:paddingLeft="@dimen/x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_lx_first_date"
+            android:text="注册日期: 2018-4-23"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x10"
+            android:layout_marginTop="@dimen/y1"
+            android:paddingLeft="@dimen/x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="@dimen/y6"
+            android:background="@color/color_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"/>
+
+        <TextView
+            android:text="个人信息:"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x12"
+            android:layout_marginTop="@dimen/y6"
+            android:paddingLeft="@dimen/x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_home_address"
+            android:text="家乡: xxx"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x10"
+            android:layout_marginTop="@dimen/y2"
+            android:paddingLeft="@dimen/x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_occupation"
+            android:text="职业: 教师"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x10"
+            android:layout_marginTop="@dimen/y1"
+            android:paddingLeft="@dimen/x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_education"
+            android:text="学历: 本科"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x10"
+            android:layout_marginTop="@dimen/y2"
+            android:paddingLeft="@dimen/x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_college"
+            android:text="毕业学校: 社会学院"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x10"
+            android:layout_marginTop="@dimen/y1"
+            android:paddingLeft="@dimen/x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_brithday"
+            android:text="生日: 1987年04月27日"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x10"
+            android:layout_marginTop="@dimen/y1"
+            android:paddingLeft="@dimen/x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="@dimen/y6"
+            android:background="@color/color_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/item_tab2"
+        android:layout_marginTop="@dimen/x6"
+        android:layout_marginBottom="@dimen/x6"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y26">
+
+        <!--<ImageView-->
+            <!--android:src="@drawable/ic_default_picture"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <TextView
+            android:text="TA关注的人: "
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x12"
+            android:layout_marginTop="@dimen/y6"
+            android:paddingLeft="@dimen/x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_follows1"
+            android:src="@drawable/sidebar_default_head_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_follows2"
+            android:src="@drawable/sidebar_default_head_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_follows3"
+            android:src="@drawable/sidebar_default_head_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_follows4"
+            android:src="@drawable/sidebar_default_head_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/logo_more3"
+            android:layout_gravity="center"
+            android:src="@drawable/right"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+        <View
+            android:layout_marginTop="@dimen/y6"
+            android:background="@color/color_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"/>
+
+    <LinearLayout
+        android:id="@+id/item_tab3"
+        android:layout_marginTop="@dimen/x6"
+        android:layout_marginBottom="@dimen/y16"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y26">
+
+        <!--<ImageView-->
+            <!--android:src="@drawable/ic_default_picture"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <TextView
+            android:text="关注TA的人: "
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x12"
+            android:layout_marginTop="@dimen/y6"
+            android:paddingLeft="@dimen/x9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_fans1"
+            android:src="@drawable/sidebar_default_head_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_fans2"
+            android:src="@drawable/sidebar_default_head_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_fans3"
+            android:src="@drawable/sidebar_default_head_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_fans4"
+            android:src="@drawable/sidebar_default_head_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/logo_more4"
+            android:layout_gravity="center"
+            android:src="@drawable/right"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

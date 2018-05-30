@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_comment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/x8"
+    android:paddingRight="@dimen/x8"
+    android:paddingTop="@dimen/y5">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/comment_cir"
+        android:layout_width="@dimen/x33"
+        android:layout_height="@dimen/x33"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/sidebar_default_head_icon" />
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y34"
+        android:layout_alignBottom="@+id/comment_cir"
+        android:layout_toRightOf="@+id/comment_cir"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/comment_cir"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x5"
+            android:paddingRight="@dimen/x5">
+
+            <TextView
+                android:id="@+id/comment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/x10"
+                tools:text="这里是用户昵称" />
+
+            <TextView
+                android:id="@+id/comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/y1"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/x10"
+                tools:text="2017-11-07" />
+            <!--android:paddingBottom="@dimen/y1"-->
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_delete_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/x15"
+            android:src="@drawable/icon_delete"
+            android:visibility="invisible" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_reply_comments"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginRight="@dimen/x15"-->
+            <!--android:src="@drawable/icon_comment" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_love"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:drawableLeft="@drawable/icon_unlike"-->
+            <!--android:drawablePadding="@dimen/x5"-->
+            <!--android:text="0"-->
+            <!--android:textColor="@color/secondary_text"-->
+            <!--android:textSize="@dimen/x10" />-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/comment_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_name"
+        android:layout_toRightOf="@+id/comment_cir"
+        android:maxLines="3"
+        android:paddingLeft="@dimen/x5"
+        android:paddingRight="@dimen/x5"
+        android:text="评论内容"
+        android:textColor="@color/color_text_content"
+        android:textSize="@dimen/x10" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_image"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_below="@id/comment_body"-->
+        <!--android:layout_margin="@dimen/x5"-->
+        <!--android:layout_toRightOf="@+id/comment_cir"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/ic_default_picture"-->
+        <!--android:visibility="gone" />-->
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_com_comment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/iv_image"-->
+        <!--android:layout_marginLeft="@dimen/x5"-->
+        <!--android:layout_marginRight="@dimen/x5"-->
+        <!--android:layout_marginTop="@dimen/y5"-->
+        <!--android:layout_toRightOf="@+id/comment_cir"-->
+        <!--android:background="@color/color_bg"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="@dimen/x5">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_name1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/text_blue"-->
+                <!--android:textSize="@dimen/x10" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/son_comment1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:paddingLeft="@dimen/x5"-->
+                <!--android:textColor="@color/color_text_content"-->
+                <!--android:textSize="@dimen/x10" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_name2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/text_blue"-->
+                <!--android:textSize="@dimen/x10" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/son_comment2"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:maxLines="3"-->
+                <!--android:paddingLeft="@dimen/x5"-->
+                <!--android:textColor="@color/color_text_content"-->
+                <!--android:textSize="@dimen/x10" />-->
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/comment_click"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:onClick="onClick"-->
+            <!--android:text="共0条数据"-->
+            <!--android:textColor="@color/text_blue"-->
+            <!--android:textSize="@dimen/x10" />-->
+    <!--</LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_below="@+id/comment_body"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_marginTop="@dimen/y5"
+        android:layout_toRightOf="@id/comment_cir"
+        android:background="@color/color_bg" />
+
+</RelativeLayout>

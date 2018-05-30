@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ScrollViewCount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_titlebar_normal" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/layout_header_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y120"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_header" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user_avatar"
+                android:layout_width="@dimen/x36"
+                android:layout_height="@dimen/x36"
+                android:layout_centerInParent="true"
+                android:src="@drawable/sidebar_default_head_icon" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/x9"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x16"
+            android:paddingRight="@dimen/x12">
+
+            <LinearLayout
+                android:id="@+id/ll_item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginBottom="@dimen/x8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="wrap_content"
+                    android:text="年龄 :   "
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/x13" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:hint="请选择对象的年龄范围"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/x13" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/right" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_bg" />
+
+            <LinearLayout
+                android:id="@+id/ll_item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginBottom="@dimen/x8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="wrap_content"
+                    android:text="工作 :   "
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/x13" />
+
+                <TextView
+                    android:id="@+id/tv_occupation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:hint="请选择对象的职业"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/x13" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/right" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_bg" />
+
+            <LinearLayout
+                android:id="@+id/ll_item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginBottom="@dimen/x8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="wrap_content"
+                    android:text="身高 :   "
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/x13" />
+
+                <TextView
+                    android:id="@+id/tv_height"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:hint="请选择对象的身高范围"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/x13" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/right" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_bg" />
+
+            <LinearLayout
+                android:id="@+id/ll_item4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x8"
+                android:layout_marginBottom="@dimen/x8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="wrap_content"
+                    android:text="个性标签 :   "
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/x13" />
+
+                <TextView
+                    android:id="@+id/tv_personal_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:hint="请选择对象的个性标签"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/x13" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/right" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_save_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x8"
+                android:layout_marginRight="@dimen/x8"
+                android:layout_marginTop="@dimen/x26"
+                android:background="@drawable/btn_send_selector"
+                android:gravity="center"
+                android:padding="@dimen/x6"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x13" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

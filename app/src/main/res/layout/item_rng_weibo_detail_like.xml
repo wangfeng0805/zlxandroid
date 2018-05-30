@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_comment"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y36"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/x8"
+    android:paddingRight="@dimen/x8">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/comment_cir"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/x33"
+        android:layout_height="@dimen/x33"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/sidebar_default_head_icon" />
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/comment_cir"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x5"
+        android:paddingRight="@dimen/x5">
+
+        <TextView
+            android:id="@+id/like_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x10"
+            tools:text="这里是用户昵称" />
+
+        <TextView
+            android:id="@+id/like_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/y2"
+            android:paddingTop="@dimen/y3"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/x10"
+            tools:text="2017-11-07" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_below="@+id/ll_name"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_marginTop="@dimen/y5"
+        android:layout_toRightOf="@id/comment_cir"
+        android:background="@color/color_bg" />
+</RelativeLayout>

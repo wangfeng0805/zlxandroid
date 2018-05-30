@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:text="姓名:"
+        android:textSize="@dimen/x10"
+        android:textColor="@color/primary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:text="籍贯:"
+        android:textSize="@dimen/x10"
+        android:textColor="@color/primary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_vocation"
+        android:text="职业:"
+        android:textSize="@dimen/x10"
+        android:textColor="@color/primary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_education"
+        android:text="学历:"
+        android:textSize="@dimen/x10"
+        android:textColor="@color/primary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:text="年龄:"
+        android:textSize="@dimen/x10"
+        android:textColor="@color/primary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_born_date"
+        android:text="生日:"
+        android:textSize="@dimen/x10"
+        android:textColor="@color/primary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

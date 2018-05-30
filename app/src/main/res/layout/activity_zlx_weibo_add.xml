@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y44"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x14" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="写说说"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x14" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_push"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="@dimen/x20"-->
+            <!--android:gravity="center"-->
+            <!--android:text="发表"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/x14" />-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y3"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/tab_main_bg_top" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#ffffff"
+                android:padding="3dp"
+                >
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/hint_say_something"
+                    android:textColor="#666666"
+                    android:textColorHint="#999999"
+                    android:textSize="15sp"
+                    android:maxLength="200"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_content_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:padding="@dimen/normal_space_margin"
+                    android:textColor="#ff0000"
+                    android:visibility="gone"
+                    tools:text="-1"
+                    tools:visibility="visible"
+                    />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_pictures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="@dimen/y16"
+                android:layout_marginBottom="@dimen/y16"
+                android:layout_gravity="center"
+                android:scrollbars="horizontal"
+                android:overScrollMode="never"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/item_tab1"
+                    android:text="家乡美景"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:layout_marginRight="@dimen/x2"
+                    android:background="@drawable/tab_shuoshuo_bg"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/x10"
+                    android:padding="@dimen/x4"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/item_tab2"
+                    android:text="民风民俗"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/x2"
+                    android:layout_marginRight="@dimen/x2"
+                    android:background="@drawable/tab_shuoshuo_bg"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/x10"
+                    android:padding="@dimen/x4"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/item_tab3"
+                    android:text="广告"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/x2"
+                    android:layout_marginRight="@dimen/x2"
+                    android:background="@drawable/tab_shuoshuo_bg"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/x10"
+                    android:padding="@dimen/x4"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/item_tab4"
+                    android:text="求助"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/x2"
+                    android:layout_marginRight="@dimen/x2"
+                    android:background="@drawable/tab_shuoshuo_bg"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/x10"
+                    android:padding="@dimen/x4"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/item_tab5"
+                    android:text="老乡新动态"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/x2"
+                    android:layout_marginRight="@dimen/x4"
+                    android:background="@drawable/tab_shuoshuo_bg"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/x10"
+                    android:padding="@dimen/x4"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x38"
+                android:layout_marginRight="@dimen/x38"
+                android:layout_marginTop="@dimen/x26"
+                android:background="@drawable/btn_send_selector"
+                android:gravity="center"
+                android:padding="@dimen/x6"
+                android:text="发表"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x12"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

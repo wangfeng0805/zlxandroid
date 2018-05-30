@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_titlebar_normal"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_save_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginRight="@dimen/x26"
+        android:layout_marginTop="@dimen/y6"
+        android:layout_marginBottom="@dimen/y8"
+        android:background="@drawable/btn_send_selector"
+        android:gravity="center"
+        android:padding="@dimen/x6"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x13" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference"/>
+        <attr name="metaButtonBarButtonStyle" format="reference"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="RoundImageView">
+        <attr name="mborderWidth" format="reference|dimension"/>
+        <attr name="mborderRadius" format="reference|dimension"/>
+        <attr name="mborderColor" format="reference|color"/>
+        <attr name="mhoverColor" format="reference|color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension"/>
+        <attr name="ci_height" format="dimension"/>
+        <attr name="ci_margin" format="dimension"/>
+        <attr name="ci_animator" format="reference"/>
+        <attr name="ci_animator_reverse" format="reference"/>
+        <attr name="ci_drawable" format="reference"/>
+        <attr name="ci_drawable_unselected" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomGradeView">
+        <attr name="grade_value" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoyalSwitch">
+        <!-- 开关打开颜色 -->
+        <attr name="checked_color" format="color" />
+        <!-- 开关关闭颜色 -->
+        <attr name="unchecked_color" format="color" />
+        <!-- 开关图片资源 -->
+        <attr name="thumb" format="dimension" />
+
+    </declare-styleable>
+</resources>

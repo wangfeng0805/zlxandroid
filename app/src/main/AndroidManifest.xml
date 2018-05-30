@@ -2,17 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ylf019.zlxandroid">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     //获取设备网络状态，禁用后无法获取网络状态
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     //网络权限，当禁用后，无法进行检索等相关业务
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     //读取设备硬件信息，统计数据
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
     //读取系统信息，包含系统版本等信息，用作统计
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     //获取设备的网络状态，鉴权所需网络代理
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     //允许sd卡写权限，需写入地图数据，禁用后无法显示地图
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     //获取统计数据
@@ -20,26 +21,154 @@
     //鉴权所需该权限获取进程列表
     <uses-permission android:name="android.permission.CAMERA" />
 
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
     <application
-        android:name="com.example.ylf019.zlxandroid.MainApp"
+        android:name=".MainApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-
+        android:theme="@style/AppTheme.Toolbar">
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="N9ChTRAnPcYYfDGnIlvj4mIGcumnZxn1" />
 
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".login.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true" />
+        <activity android:name=".login.LoadingActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".home.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".home.GalleryActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxfind.OtherSpaceActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxfind.MySpaceActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxpersoncenter.ZlxPerfectPersonActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxpersoncenter.ZlxMyFansListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxpersoncenter.ZlxGuanzhuListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxweibo.ZlxWeiboAddActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxweibo.ZlxWeiboActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxweibo.ZlxWeiboCommentAddActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxcenter.ZlxChooseActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxpersoncenter.ZlxHelpActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxpersoncenter.ZlxPersonalTagActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxcenter.ZlxHomePageActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxcenter.ZlxObjectSearchActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxcenter.ZlxLoveRequirementActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".zlxweibo.ZlxWriteMessageActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
+        <activity android:name=".login.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWithContentMenuStyle"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+
     </application>
 
 </manifest>

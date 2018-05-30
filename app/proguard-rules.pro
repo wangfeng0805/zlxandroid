@@ -23,3 +23,29 @@
 -keep class com.baidu.** {*;}
 -keep class vi.com.** {*;}
 -dontwarn com.baidu.**
+
+-keep class com.tencent.mm.opensdk.** {
+
+*;
+
+}
+
+-keep class com.tencent.wxop.** {
+
+*;
+
+}
+
+-keep class com.tencent.mm.sdk.** {
+
+*;
+
+}
+
+#（可选）避免Log打印输出
+-assumenosideeffects class android.util.Log {
+   public static *** v(...);
+   public static *** d(...);
+   public static *** i(...);
+   public static *** w(...);
+ }

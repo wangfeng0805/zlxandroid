@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.ylf019.zlxandroid.SplashActivity">
+    android:layout_height="match_parent">
 
-    <com.baidu.mapapi.map.MapView
-        android:id="@+id/bmapView"
+    <com.example.ylf019.zlxandroid.view.CustomViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clickable="true" />
+        android:layout_height="match_parent"/>
 
-</android.support.constraint.ConstraintLayout>
+    <com.example.ylf019.zlxandroid.view.CircleIndicator
+        android:id="@+id/ci_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:minHeight="12dp"/>
+</FrameLayout>

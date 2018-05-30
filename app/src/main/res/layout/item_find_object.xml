@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_object"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/x6"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ll_item"
+            android:layout_width="@dimen/x116"
+            android:layout_height="@dimen/y126"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ri_round_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_object_girl"
+                app:riv_corner_radius="@dimen/x8"
+                app:riv_mutate_background="true" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_picture"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y106"
+                android:layout_margin="@dimen/x3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_default_picture"
+                app:riv_corner_radius_top_left="@dimen/x6"
+                app:riv_corner_radius_top_right="@dimen/x6"
+                app:riv_mutate_background="true" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x3"
+                android:layout_alignParentBottom="true"
+                android:text=" 30岁   |   600米"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x10" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x6"
+            android:text="临时入境"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/tv_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x6"
+            android:text="上海市浦东新区 程序员"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/x10" />
+
+        <TextView
+            android:id="@+id/tv_like_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x6"
+            android:text="健谈 敢爱敢恨"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/x10" />
+
+    </LinearLayout>
+
+</FrameLayout>
